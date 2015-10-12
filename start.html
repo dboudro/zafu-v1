@@ -1,158 +1,167 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <script language="javascript" type="text/javascript" src="./js/audio.js"></script>
-       <script src="https://use.typekit.net/jos7obq.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <title>Zafu</title>
-        <link rel="shortcut icon" type="image/png"  href="images/favicon1.png">
-    </head>
-     <style>
-    /* inline stylesheet for ease of access */
-     body {
-          font-family: 
-        "proxima-nova"; 
-        font-size: 10px;
-        color: white;
-     }
-     ::selection {
-        background-color: #a395c7;
-        color: white;
-        opacity: 1;
-    }
-         
-     video#bgvid {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        background: url(bgs/107.JPG) no-repeat;
-        background-size: cover;
-}
-    h1 {
-        font-size: 69px;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-/* note: this was built at a hackathon LOL */
-    #choose {
-        position: fixed;
-        top: 87.25px;
-        left: 10px;
-    }
-    audio {
-        position: fixed;
-        top: 160px;
-        left: 535px;
-    }
-    #your {
-        position: fixed;
-        top: 145.5px;
-        left: 10px;
-    }
-    #path {
-        position: fixed;
-        top: 213px;
-        left: 10px;
-    }
-    #circle1 {
-        position: fixed;
-        top: 468px;
-        left: 535.9px;
-        background-color: #45925f;
-        width: 210px;
-        height: 210px;
-        border-radius: 50%;
-    }
-  
-    h2 {
-        font-size: 42px;
-        font-weight: 900;
-    }
-    h3 {
-        font-size: 19px;
-        font-weight: 100;
-    }
-    h4 {
-        font-size: 19px;
-        font-weight: 500;
-    }
-    #circle2 {
-        position: fixed;
-        top: 480px;
-        left: 779.8px;
-        background-color: #45925f;
-        width: 185px;
-        height: 185px;
-        border-radius: 50%;
-    }
-  
-    #circle3 {
-        position: fixed;
-        top: 456px;
-        left: 1005.6px;
-        background-color: #45925f;
-        width: 233px;
-        height: 233px;
-        border-radius: 50%;
-    }
-    .item:hover {
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://use.typekit.net/jos7obq.js"></script>
+  <script>
+    try { Typekit.load({ async: true }); }
+    catch (e) {}
+  </script>
+  <title>Zafu</title>
+  <link rel="shortcut icon" href="images/favicon1.png">
+</head>
+<style>
+  /* inline stylesheet for ease of access */
+
+  body {
+    background-color: black;
+    font-family: "proxima-nova";
+    font-size: 10px;
+    color: white;
+  }
+  /* styling for highlight */
+  ::selection {
+    background-color: #a395c7;
+    color: white;
+    opacity: 1;
+  }
+
+  video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(bgs/107.JPG) no-repeat;
+    background-size: cover;
+  }
+
+  audio {
+    position: fixed;
+    top: 160px;
+    left: 535px;
+  }
+
+  h1 {
+    font-size: 68px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 42px;
+    font-weight: 900;
+  }
+
+  h3 {
+    font-size: 19px;
+    font-weight: 100;
+  }
+
+  h4 {
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  #choose {
+    position: fixed;
+    top: 87.25px;
+    left: 10px;
+  }
+
+  #your {
+    position: fixed;
+    top: 145.5px;
+    left: 10px;
+  }
+
+  #path {
+    position: fixed;
+    top: 213px;
+    left: 10px;
+  }
+
+  #circle1 {
+    position: fixed;
+    top: 468px;
+    left: 535.9px;
+    background-color: #45925f;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+  }
+
+  #circle2 {
+    position: fixed;
+    top: 480px;
+    left: 779.8px;
+    background-color: #45925f;
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+  }
+
+  #circle3 {
+    position: fixed;
+    top: 456px;
+    left: 1005.6px;
+    background-color: #45925f;
+    width: 233px;
+    height: 233px;
+    border-radius: 50%;
+  }
+
+  .item:hover {
     cursor: pointer;
-    }
-    </style>
-    <body>
-        
-   
-        
-    <h1 id="choose">choose</h1>
-    <h1 id="your">your</h1>
-    <h1 id="path">path.</h1>
-        
-<img onclick="change('guidedMeditations/kindness.mp3')" id="circle1" class="item" src="images/item1.png"> 
-        <img onclick="change('guidedMeditations/breathe.mp3')"id="circle2" class="item" src="images/item2.png"> 
-        <img onclick="change('guidedMeditations/body-scan.mp3')"id="circle3" class="item" src="images/item3.png"> 
-        
-    <video autoplay mut
-           ed loop  id="bgvid">
-<source src="bgvideos/garden2.mp4" type="video/mp4">
-        </video>
-        
-          <audio id="meditation1" controls>
- 
-              <source src="audio/kindness.mp3" type="audio/mpeg">
-             
-Your browser does not support html5 audio
-</audio>
-          <audio id="meditation2" controls>
-              <source src="audio/breathe.mp3" type="audio/mpeg">     
-Your browser does not support html5 audio
-</audio>
-          <audio id="meditation3" controls>
-             <source src="audio/body-scan.mp3" type="audio/mpeg">   
-Your browser does not support html5 audio
-</audio>
-          
-        
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  }
+</style>
 
-  ga('create', 'UA-67736286-1', 'auto');
-  ga('send', 'pageview');
+<body>
 
-</script>
-        
-        
-    </body>
+  <h1 id="choose">choose</h1>
+  <h1 id="your">your</h1>
+  <h1 id="path">path.</h1>
+
+  <img onclick="change('guidedMeditations/kindness.mp3')" id="circle1" class="item" src="images/item1.png">
+  <img onclick="change('guidedMeditations/breathe.mp3')" id="circle2" class="item" src="images/item2.png">
+  <img onclick="change('guidedMeditations/body-scan.mp3')" id="circle3" class="item" src="images/item3.png">
+
+  <video autoplay mut ed loop id="bgvid">
+    <source src="bgvideos/garden2.mp4" type="video/mp4">
+  </video>
+
+  <audio id="meditation1" controls>
+
+    <source src="audio/kindness.mp3" type="audio/mpeg"> Your browser does not support html5 audio
+  </audio>
+  <audio id="meditation2" controls>
+    <source src="audio/breathe.mp3" type="audio/mpeg"> Your browser does not support html5 audio
+  </audio>
+  <audio id="meditation3" controls>
+    <source src="audio/body-scan.mp3" type="audio/mpeg"> Your browser does not support html5 audio
+  </audio>
 
 
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-67736286-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-</html>
+
+</body>
