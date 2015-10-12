@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script src="https://use.typekit.net/jos7obq.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <title>Zafu</title>
+        <link rel="shortcut icon" type="image/png"  href="images/favicon1.png">
+    </head>
+    <style>
+    /* inline stylesheet for ease of access */
+    body {
+        background-color: black;
+        font-family: 
+        "proxima-nova"; 
+        font-size: 10px;
+    } 
+    #illustration {
+        position: fixed;
+        width:  475px;
+        height: 588px;
+        left: 31px;
+        top: 62.5px;
+/*        border: 1px solid red;*/
+    }
+
+    h1 {
+        position: fixed;
+        left: 482.875px;
+        top: 118.8px;
+        font-weight: 700;
+        font-size: 68px;
+/*        border: 1px solid blue;*/
+        color: white;
+        letter-spacing: 2px;  
+    }
+    ::selection {
+        background-color: #a395c7;
+    color: white;
+        opacity: 1;
+    }
+   
+    #green-text {
+        color: #45925f;
+    }
+    #yellow-text {
+        color: #d9ae5d;
+    }
+    #arrows { 
+        position: fixed;
+        left: 1124px;
+        top: 188px;
+        width: 157px;
+        height: 37px;
+    }
+    h2 {
+        position: fixed;
+        left: 485.875px;
+        top: 213px;
+        font-weight: 500;
+        font-size: 23.5px;
+        color: white;
+        letter-spacing: 1px;
+    }
+        #start-container {
+            position: fixed;
+            left: 775.6px;
+            top: 410.5px;
+            width: 150px;
+            height: 213px;
+            overflow: hidden;  
+        }
+        #start-container video {
+            opacity: .2;
+        }
+        #start-container video:hover {
+            opacity: 1;
+        }
+    #start-button {
+        position: fixed;
+        left: 775.6px;
+        top: 360.5px;
+        display: table;
+        font-size: 50px;
+        font-family: "source-sans-pro";
+        font-weight: 900;
+        color: #45925f;
+        border: 5px solid #45925f;
+        padding: 130px 7px 6px 7px;
+background-size: 200% 200%;
+background-image: 
+linear-gradient(to top, #45925f 50%, transparent 50%);
+-webkit-transition: background-position 600ms, color 450ms ease, border-color 450ms ease;
+-moz-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-ms-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-o-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+
+    }
+        
+        #start-button:hover {color: black;
+border-color: #45925f;
+background-image: 
+linear-gradient(to top, #45925f 51%, transparent 50%);
+background-position: 0 100%;
+-webkit-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-moz-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-ms-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-o-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+}
+
+
+a {color: #45925f; text-decoration: none;
+transition: all 200ms linear;
+-webkit-transition: all 200ms linear;
+-moz-transition: all 200ms linear;
+-ms-transition: all 200ms linear;
+-o-transition: all 200ms linear;}
+
+
+    #learn-button {
+        position: fixed;
+        left: 952px;
+        top: 360.5px;
+        display: table;
+        font-size: 50px;
+        font-family: "source-sans-pro";
+        font-weight: 900;
+        color: #d9ae5d;
+        border: 5px solid #d9ae5d;
+        padding: 130px 7px 6px 7px;
+        background-size: 200% 200%;
+background-image: 
+linear-gradient(to top, #d9ae5d 50%, transparent 50%);
+-webkit-transition: background-position 600ms, color 3000ms ease, border-color 450ms ease;
+-moz-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-ms-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-o-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+    }
+        
+              #learn-button:hover {color: black;
+border-color: #d9ae5d;
+background-image: 
+linear-gradient(to top, #d9ae5d 51%, transparent 50%);
+background-position: 0 100%;
+-webkit-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-moz-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-ms-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+-o-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+}
+        .channel:hover {
+            cursor: pointer;
+        }
+    
+    </style>
+
+<body>
+    <img id="illustration" src="images/illustration.png">
+   <div id="movement"> <img id="arrows" src="images/arrows.png"> </div>
+    <h1> <span id="green-text">zafu </span> is a movement </h1>
+    
+    <h2> we believe meditation should be practiced <span id="yellow-text"> daily. </span></h2>
+    <div id="start-container">
+    <a href="./start.html"><p id="start-button" class="channel">start.</p></a> </div>
+    <a href="./learn.html"><p id="learn-button" class="channel">learn.</p></a>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67736286-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+
+</html>
