@@ -7,6 +7,7 @@
     try { Typekit.load({ async: true }); }
     catch (e) {}
   </script>
+  <script src="js/audio.js"></script>
   <title>Zafu</title>
   <link rel="shortcut icon" href="images/favicon1.png">
 </head>
@@ -127,12 +128,12 @@
   <h1 id="your">your</h1>
   <h1 id="path">path.</h1>
 
-  <img onclick="change('guidedMeditations/kindness.mp3')" id="circle1" class="item" src="images/item1.png">
-  <img onclick="change('guidedMeditations/breathe.mp3')" id="circle2" class="item" src="images/item2.png">
-  <img onclick="change('guidedMeditations/body-scan.mp3')" id="circle3" class="item" src="images/item3.png">
+  <img onclick="playTrack1()" id="circle1" class="item" src="images/item1.png">
+  <img id="circle2" class="item" src="images/item2.png">
+  <img id="circle3" class="item" src="images/item3.png">
 
-  <video autoplay mut ed loop id="bgvid">
-    <source src="bgvideos/garden2.mp4" type="video/mp4">
+  <video autoplay loop id="bgvid">
+    <source src="bgvideos/garden_v5_noblackscreen.mp4" type="video/mp4">
   </video>
 
   <audio id="meditation1" controls>
