@@ -3,6 +3,40 @@
 <head>
   <meta charset="utf-8">
   <script src="https://use.typekit.net/jos7obq.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/jquery.powertip.min.js"></script>
+  <link rel="stylesheet" href="css/jquery.powertip.css">
+  <link rel="stylesheet" href="css/jquery.powertip.min.css">
+  <link rel="stylesheet" href="css/jquery.powertip-blue.css">
+  <link rel="stylesheet" href="css/jquery.powertip-blue.min.css">
+  <link rel="stylesheet" href="css/jquery.powertip-dark.min.css">
+  <link rel="stylesheet" href="css/jquery.powertip-green.css">
+  <link rel="stylesheet" href="css/jquery.powertip-green.min.css">
+  <link rel="stylesheet" href="css/jquery.powertip-green.css">
+  <link rel="stylesheet" href="css/jquery.powertip-green.min.css">
+
+  <script src="js/tooltips.js"></script>
+
+  <!-- stylesheets for tooltips TEMPORARY -->
+
+
+
+
+<!-- jquery.powertip-green.css
+jquery.powertip-green.min.css
+jquery.powertip-light.css
+jquery.powertip-light.min.css
+jquery.powertip-orange.css
+jquery.powertip-orange.min.css
+jquery.powertip-purple.css
+jquery.powertip-purple.min.css
+jquery.powertip-red.css
+jquery.powertip-red.min.css
+jquery.powertip-yellow.css
+jquery.powertip-yellow.min.css -->
+
+
   <script>
     try { Typekit.load({ async: true }); }
     catch (e) {}
@@ -13,10 +47,18 @@
 <style>
 
   body {
-    background-color: black;
+    background-color: #222;
     color: white;
     font-family: "proxima-nova";
     font-size: 10px;
+  }
+
+  #powerTip {
+    position: absolute;
+    display: none;
+    z-index: 2147483647;
+  }
+  #testingtip {
   }
   /* styling for highlight */
   ::selection {
@@ -93,6 +135,7 @@
     top: 360px;
     border: 0px solid purple;
   }
+
 </style>
 
 <body>
@@ -105,7 +148,7 @@
 <div id="resource-list-container">
   <div id="col1">
     <h2 class="yellow-bg">meditate now</h2>
-    <a href="http://calm.com">Calm.com</a>
+    <a class="resource" title="loremipsum" href="http://calm.com">Calm.com</a>
     <a href="http://headspace.com">Headspace.com</a>
     <a href="http://audiodharma.org">AudioDharma.com</a>
     <a href="https://www.youtube.com/playlist?list=PLxktT8aMunYT_XkD8TTQxY4Ww4d4-2CaD">Meditation Music</a>
