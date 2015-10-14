@@ -5,9 +5,9 @@
   <script src="https://use.typekit.net/jos7obq.js"></script>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-  <!-- stylesheets for tooltips TEMPORARY -->
-
+  <!-- tipped scripts -->
+  <script type="text/javascript" src="js/tipped/tipped.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/tipped/tipped.css"/>
 
 
 
@@ -115,7 +115,7 @@
 <div id="resource-list-container">
   <div id="col1">
     <h2 class="yellow-bg">meditate now</h2>
-    <a href="http://calm.com">Calm.com</a>
+    <a class="simple-tooltip" title="First tooltip" href="http://calm.com">Calm.com</a>
     <a href="http://headspace.com">Headspace.com</a>
     <a href="http://audiodharma.org">AudioDharma.com</a>
     <a href="https://www.youtube.com/playlist?list=PLxktT8aMunYT_XkD8TTQxY4Ww4d4-2CaD">Meditation Music</a>
@@ -164,5 +164,13 @@
 
     ga('create', 'UA-67736286-1', 'auto');
     ga('send', 'pageview');
+  </script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      Tipped.create('.simple-tooltip');
+    });
+  </script>
   </script>
 </body>
