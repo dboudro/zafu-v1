@@ -115,37 +115,37 @@
 <div id="resource-list-container">
   <div id="col1">
     <h2 class="yellow-bg">meditate now</h2>
-    <a class="simple-tooltip" title="First tooltip" href="http://calm.com">Calm.com</a>
-    <a href="http://headspace.com">Headspace.com</a>
-    <a href="http://audiodharma.org">AudioDharma.com</a>
-    <a href="https://www.youtube.com/playlist?list=PLxktT8aMunYT_XkD8TTQxY4Ww4d4-2CaD">Meditation Music</a>
+    <a class="tooltip-item" title="Calm.com is a simple, relaxing website that offers natural noise, guided and unguided meditaitons on the breathe for selected lengths of time." href="http://calm.com">Calm.com</a>
+    <a class="tooltip-item" title="First tooltip" href="http://headspace.com">Headspace.com</a>
+    <a class="tooltip-item" title="First tooltip" href="http://audiodharma.org">AudioDharma.com</a>
+    <a class="tooltip-item" title="First tooltip" href="https://www.youtube.com/playlist?list=PLxktT8aMunYT_XkD8TTQxY4Ww4d4-2CaD">Meditation Music</a>
   </div>
   <!-- - - - - - - - - COLUMN 2 ------------>
   <div id="col2">
     <h2 class="green-bg">Communities &amp; Tools</h2>
-    <a href="http://zenhabits.net">Zenhabits</a>
-    <a href="http://www.mindful.org/">Mindful</a>
-    <a href="http://zenpen.io">Zenpen.io</a>
-    <a href="http://reddit.com/r/meditation">Meditation Subreddit</a>
-    <a href="http://Noisli.com">White Noise Generator</a>
+    <a class="tooltip-item" title="First tooltip" href="http://zenhabits.net">Zenhabits</a>
+    <a class="tooltip-item" title="First tooltip" href="http://www.mindful.org/">Mindful</a>
+    <a class="tooltip-item" title="First tooltip" href="http://zenpen.io">Zenpen.io</a>
+    <a class="tooltip-item" title="First tooltip" href="http://reddit.com/r/meditation">Meditation Subreddit</a>
+    <a class="tooltip-item" title="First tooltip" href="http://Noisli.com">White Noise Generator</a>
   </div>
   <!-- - - - - - - - -COLUMN 3 ------------>
   <div id="col3">
     <h2 class="yellow-bg">Handpicked Articles</h2>
-    <a href="http://www.sonima.com/meditation/meditate-anywhere/">Meditate Anywhere</a>
-    <a href="http://www.mindful.org/five-steps-to-mindfulness/">5 Steps to Mindfulness</a>
-    <a href="http://www.vipassanadhura.com/howto.htm">Guide to Vipassana</a>
-    <a href="http://andoperez.com/koh/">10 Virtues of Incense (Koh)</a>
-    <a href="https://vimeo.com/131682712">Meditation 101 Animation</a>
+    <a class="tooltip-item" title="First tooltip" href="http://www.sonima.com/meditation/meditate-anywhere/">Meditate Anywhere</a>
+    <a class="tooltip-item" title="First tooltip" href="http://www.mindful.org/five-steps-to-mindfulness/">5 Steps to Mindfulness</a>
+    <a class="tooltip-item" title="First tooltip" href="http://www.vipassanadhura.com/howto.htm">Guide to Vipassana</a>
+    <a class="tooltip-item" title="First tooltip" href="http://andoperez.com/koh/">10 Virtues of Incense (Koh)</a>
+    <a class="tooltip-item" title="First tooltip" href="https://vimeo.com/131682712">Meditation 101 Animation</a>
   </div>
   <!-- - - - - - - - - COLUMN 4 - - - - - - - - -->
   <div id="col4">
     <h2 class="green-bg">Lifestyle</h2>
-    <a href="http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=zafu">Zafu Meditation Cushions</a>
-    <a href="http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=tibetan+singing+bowls&rh=i%3Aaps%2Ck%3Atibetan+singing+bowls">Tibetan Singing Bowls</a>
-    <a href="https://www.kabbalahart.com/gallery/">Meditative Art</a>
-    <a href="http://coolidgeyoga.com/">Coolidge Corner Yoga</a>
-    <a href="http://karmayogastudios.com/">Karma Yoga</a>
+    <a class="tooltip-item" title="First tooltip" href="http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=zafu">Zafu Meditation Cushions</a>
+    <a class="tooltip-item" title="First tooltip" href="http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=tibetan+singing+bowls&rh=i%3Aaps%2Ck%3Atibetan+singing+bowls">Tibetan Singing Bowls</a>
+    <a class="tooltip-item" title="First tooltip" href="https://www.kabbalahart.com/gallery/">Meditative Art</a>
+    <a class="tooltip-item" title="First tooltip" href="http://coolidgeyoga.com/">Coolidge Corner Yoga</a>
+    <a class="tooltip-item" title="First tooltip" href="http://karmayogastudios.com/">Karma Yoga</a>
   </div>
 </div>
 
@@ -166,10 +166,10 @@
     ga('send', 'pageview');
   </script>
 
-
+<!-- tooltip code temporarily here for developer access -->
   <script type="text/javascript">
     $(document).ready(function() {
-      Tipped.create('.simple-tooltip');
+      Tipped.create('.tooltip-item', { position: 'topleft' });
     });
   </script>
   </script>
