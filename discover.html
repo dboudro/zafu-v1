@@ -10,6 +10,8 @@
       });
     } catch (e) {}
   </script>
+  <script src="/path/to/masonry.pkgd.min.js"></script>
+  <script src="js/initmasonry.js"></script>
   <link rel="shortcut icon" href="images/favicon1.png">
 </head>
 <style>
@@ -43,9 +45,23 @@
     font-size: 23.5px;
     letter-spacing: 1px;
   }
+
+  .grid-item {
+    width: 200px;
+  }
+
+  .grid-item--width2 {
+     width: 400px;
+  }
 </style>
 
 <body>
   <h1> discover.</h1>
+
+  <div class="grid">
+  <div class="grid-item">test</div>
+  <div class="grid-item grid-item--width2">test 2 double width</div>
+  <div class="grid-item">test 3</div>
+</div>
 
 </body>
