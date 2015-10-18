@@ -46,11 +46,17 @@
   }
 
   .grid-item {
-    width: 200px;
+    width: 11.446135831vw;
+    height: 11.446135831vw;
+    border: 1px solid white;
+    margin: .936768149vw;
   }
 
   .grid-item--width2 {
      width: 400px;
+  }
+  .grid-item--height2 {
+     height: 400px;
   }
 </style>
 
@@ -58,10 +64,15 @@
   <h1> discover.</h1>
 
   <div class="grid js-masonry"
-  data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-  <div class="grid-item">test</div>
-  <div class="grid-item grid-item--width2">test 2 double width</div>
-  <div class="grid-item">test 3</div>
+  data-masonry-options='{ "itemSelector": ".grid-item" }'>
+  <div class="grid-item grid-item--height2">zenpen.io</div>
+  <div class="grid-item grid-item--width2">zenhabits</div>
+  <div class="grid-item">blank</div>
+  <div class="grid-item grid-item--height2 grid-item--width2">coolidge corner yoga</div>
+  <div class="grid-item grid-item--height2">blank</div>
+  <div class="grid-item grid-item--width2">mindful.org</div>
+    <div class="grid-item">calm.com</div>
+    <div class="grid-item grid-item--width2">headspace.org</div>
 </div>
 
 </body>
