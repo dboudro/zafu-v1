@@ -68,10 +68,6 @@
     border: 3px solid white;
     margin-right: .936768149vw;
     margin-top: .936768149vw;
-    text-align: center;
-    font-family: "source-sans-pro";
-    font-weight: 200;
-    letter-spacing: 3px;
   }
 
   .grid-item--width2 {
@@ -79,6 +75,17 @@
   }
   .grid-item--height2 {
      height: 24.3vw;
+  }
+
+  .grid a {
+    display: block;
+    margin: auto;
+    font-family: "source-sans-pro";
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: white;
+
   }
 
   #logo {
@@ -117,11 +124,14 @@
   <h1 id="discover"> discover.</h1>
 
   <div class="grid js-masonry"
-  data-masonry-options='{ "itemSelector": ".grid-item" }'>
+  data-masonry-options='{ "itemSelector": ".grid-item", "percentPosition": "true" }'>
   <div class="grid-item grid-item--height2">ZENPEN.IO</div>
   <div class="grid-item grid-item--width2">ZENHABITS</div>
   <div class="grid-item">BLANK</div>
-  <div class="grid-item grid-item--height2 grid-item--width2">COOLIDGE CORNER YOGA</div>
+  <div class="grid-item grid-item--height2 grid-item--width2">
+<a class="tooltip-item" title="the Best yoga studio there is!"
+   href="http://coolidgeyoga.com/">COOLIDGE CORNER YOGA</a>
+  </div>
   <div class="grid-item grid-item--height2">BLANK</div>
   <div class="grid-item grid-item--width2">MINDFUL.ORG</div>
     <div class="grid-item">CALM.COM</div>
