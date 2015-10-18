@@ -24,6 +24,8 @@
     color: white;
     font-family: "proxima-nova";
     font-size: 10px;
+    padding: 0;
+    margin: 0;
   }
   /* styling for highlight */
 
@@ -37,6 +39,7 @@
     font-weight: 700;
     font-size: 68px;
     letter-spacing: 2px;
+
   }
 
   h2 {
@@ -45,36 +48,88 @@
     letter-spacing: 1px;
   }
 
+  #green-top-bar {
+    height: 8px;
+    width: 100vw;
+    background-color: #45925f;
+  }
+  #discover {
+    color: #45925f;
+    margin: 5vh 10.846135831vw 0 10.846135831vw;
+  }
+
+  .grid {
+    margin: 0 10.846135831vw 5vh;
+  }
+
   .grid-item {
     width: 11.446135831vw;
     height: 11.446135831vw;
-    border: 1px solid white;
+    border: 3px solid white;
     margin-right: .936768149vw;
     margin-top: .936768149vw;
     text-align: center;
+    font-family: "source-sans-pro";
+    font-weight: 200;
+    letter-spacing: 3px;
   }
 
   .grid-item--width2 {
-     width: 23.892271662vw;
+     width: 24.3vw;
   }
   .grid-item--height2 {
-     height: 23.892271662vw;
+     height: 24.3vw;
+  }
+
+  #logo {
+    display: table;
+    width: 68px;
+    height: 68px;
+    margin: 10px auto;
+  }
+
+  #green-bot-bar {
+    position: fixed;
+    top: calc(100vh - 8px);
+    height: 8px;
+    width: 100vw;
+    background-color: #45925f;
+    z-index: 0;
+  }
+
+  #rocks1 {
+    position: fixed;
+    top: calc(100vh - 158px);
+    margin-left: 10.846135831vw;
+    z-index: 2;
+  }
+  #rocks2 {
+    position: fixed;
+    top: calc(100vh - 162px);
+    right: 10.846135831vw;
+    z-index: 2;
+
   }
 </style>
 
 <body>
-  <h1> discover.</h1>
+    <div id="green-top-bar"></div>
+  <h1 id="discover"> discover.</h1>
 
   <div class="grid js-masonry"
   data-masonry-options='{ "itemSelector": ".grid-item" }'>
-  <div class="grid-item grid-item--height2">zenpen.io</div>
-  <div class="grid-item grid-item--width2">zenhabits</div>
-  <div class="grid-item">blank</div>
-  <div class="grid-item grid-item--height2 grid-item--width2">coolidge corner yoga</div>
-  <div class="grid-item grid-item--height2">blank</div>
-  <div class="grid-item grid-item--width2">mindful.org</div>
-    <div class="grid-item">calm.com</div>
-    <div class="grid-item grid-item--width2">headspace.org</div>
+  <div class="grid-item grid-item--height2">ZENPEN.IO</div>
+  <div class="grid-item grid-item--width2">ZENHABITS</div>
+  <div class="grid-item">BLANK</div>
+  <div class="grid-item grid-item--height2 grid-item--width2">COOLIDGE CORNER YOGA</div>
+  <div class="grid-item grid-item--height2">BLANK</div>
+  <div class="grid-item grid-item--width2">MINDFUL.ORG</div>
+    <div class="grid-item">CALM.COM</div>
+    <div class="grid-item grid-item--width2">HEADSPACE.ORG</div>
 </div>
+<img id="logo" src="images/logo2.png">
+<img id="rocks1" src="images/zenRocks.png">
+<img id="rocks2" src="images/zenRocks2.png">
+      <div id="green-bot-bar"></div>
 
 </body>
