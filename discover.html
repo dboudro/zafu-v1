@@ -36,7 +36,7 @@
   }
 
   h1 {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 68px;
     letter-spacing: 2px;
 
@@ -60,7 +60,6 @@
 
   .grid {
     margin: 0 10.846135831vw 5vh;
-    opacity: .4;
   }
 
   .grid-item {
@@ -77,20 +76,23 @@
   .grid-item--height2 {
      height: 24.3vw;
   }
-  /* magic that allows centering of text */
+  /* magic that allows centering of text
   a:link {
       display: inline-block;
       position: relative;
       text-decoration: none;
   }
+  */
 
   .grid a {
-    margin: 40% 40%;
+    display: table;
+    margin: 12px 0px 0px 12px;
+    font-size: 14px;
     font-family: "source-sans-pro";
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 3px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
   }
 
 
@@ -102,7 +104,7 @@
   }
 
   #green-bot-bar {
-    position: fixed;
+    position: absolute;
     top: calc(100vh - 8px);
     height: 8px;
     width: 100vw;
@@ -111,14 +113,14 @@
   }
 
   #rocks1 {
-    position: fixed;
-    top: calc(100vh - 158px);
+    position: absolute;
+    top: calc(100vh - 115px);
     margin-left: 10.846135831vw;
     z-index: 2;
   }
   #rocks2 {
-    position: fixed;
-    top: calc(100vh - 162px);
+    position: absolute;
+    top: calc(100vh - 105px);
     right: 10.846135831vw;
     z-index: 2;
 
@@ -126,7 +128,7 @@
 </style>
 
 <body>
-    <div id="green-top-bar"></div>
+    <!-- <div id="green-top-bar"></div> -->
   <h1 id="discover"> discover.</h1>
 
   <div class="grid js-masonry"
@@ -135,17 +137,17 @@
     title="An open source writing journal in the browser. Saves your writing
     until you clear your internet browsing data. Has the functionality to: go
     full screen. change the background color &amp; more. "
-    href="http://zenpen.io">ZENPEN.IO</a></div>
+    href="http://zenpen.io">Zenpen.io</a></div>
   <div class="grid-item grid-item--width2">  <a class="tooltip-item"
     title="A very noteable blog on minimalist, vegan &amp; responsible living
     written by the talented &amp; kindhearted Leo Baubauta."
     href="http://zenhabits.net">Zenhabits</a></div>
-  <div class="grid-item"><a href="http://zafu.co">BLANK</a></div>
+  <div class="grid-item"><a href="http://zafu.co">Blank</a></div>
   <div class="grid-item grid-item--height2 grid-item--width2">
 <a class="tooltip-item" title="the Best yoga studio there is!"
-   href="http://coolidgeyoga.com/">COOLIDGE CORNER YOGA</a>
+   href="http://coolidgeyoga.com/">Coolidge Corner Yoga</a>
   </div>
-  <div class="grid-item grid-item--height2"><a href="http://zafu.co">BLANK</a></div>
+  <div class="grid-item grid-item--height2"><a href="http://zafu.co">Blank</a></div>
   <div class="grid-item grid-item--width2">  <a class="tooltip-item"
      title="A lifestyle blog that focuses on meditation, work, living,
       and general mindfulness in day to day life.  I particularly recommend
@@ -154,15 +156,15 @@
     <div class="grid-item">  <a class="tooltip-item" title="Calm.com is a simple,
        relaxing website that offers natural noise, guided and unguided
        meditaitons on the breathe for selected lengths of time."
-       href="http://calm.com">Calm.com</a></div>
+       href="http://calm.com">Calm</a></div>
     <div class="grid-item grid-item--width2">  <a class="tooltip-item"
       title="Headspace is an amazingly thorough guided course through the
       process of learning meditation. Most people who try it seem to love it."
-       href="http://headspace.com">Headspace.com</a></div>
+       href="http://headspace.com">Headspace</a></div>
 </div>
 <img id="logo" src="images/logo2.png">
-<img id="rocks1" src="images/zenRocks.png">
-<img id="rocks2" src="images/zenRocks2.png">
+<img id="rocks1" src="images/rocks3.png">
+<img id="rocks2" src="images/rocks4.png">
       <div id="green-bot-bar"></div>
 
 </body>
