@@ -21,7 +21,7 @@
 */
 
   body {
-    background-color: #111;
+
     color: white;
     font-family: "proxima-nova";
     font-size: 10px;
@@ -40,6 +40,7 @@
     font-weight: 900;
     font-size: 68px;
     letter-spacing: 2px;
+
 
   }
 
@@ -69,33 +70,26 @@
     border: 3px solid white;
     margin-right: .936768149vw;
     margin-top: .936768149vw;
-    background-size: 200% 200%;
-    background-image: linear-gradient(to top, #45925f 50%, transparent 50%);
-    -webkit-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
-    -moz-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
-    -ms-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
-    -o-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
-    transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+    background-color: #45925f;
+    border-color: #45925f;
   }
 
   .grid-item:hover {
     /*cursor: pointer;*/
     color: black;
-    border-color: #45925f;
-    background-image: linear-gradient(to top, #45925f 51%, transparent 50%);
-    background-position: 0 100%;
-    -webkit-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
-    -moz-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
-    -ms-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
-    -o-transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
-    transition: background-position 450ms, color 450ms ease, border-color 450ms ease;
+    border-color: white;
+    transition: border-color 1s ease;
   }
 
   .grid-item--width2 {
      width: 24.3vw;
+     /*background-color: #d9ae5d;
+     border-color: #d9ae5d;*/
   }
   .grid-item--height2 {
      height: 24.3vw;
+     background-color: #266D98;
+     border-color: #266D98;
   }
   /* magic that allows centering of text
   a:link {
@@ -145,6 +139,20 @@
     z-index: 2;
   }
 
+  video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(bgs/107.JPG) no-repeat;
+    background-size: cover;
+  }
 </style>
 
 <body>
@@ -182,9 +190,9 @@
       process of learning meditation. Most people who try it seem to love it."
        href="http://headspace.com">Headspace</a></div>
 </div>
-<img id="logo" src="images/logo2.png">
-<img id="rocks1" src="images/rocks3.png">
-<img id="rocks2" src="images/rocks4.png">
-      <div id="green-bot-bar"></div>
+
+      <video autoplay loop id="bgvid">
+        <source src="bgvideos/garden_v5_noblackscreen.mp4" type="video/mp4">
+      </video>
 
 </body>
