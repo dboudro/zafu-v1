@@ -4,182 +4,197 @@
   <meta charset="utf-8">
   <script src="https://use.typekit.net/jos7obq.js"></script>
   <script>
-    try { Typekit.load({ async: true }); }
-    catch (e) {}
+    try {
+      Typekit.load({
+        async: true
+      });
+    } catch (e) {}
   </script>
   <link rel="shortcut icon" href="images/favicon1.png">
 </head>
 <style>
-/*
+  /*
 #d9ae5d
 #45925f
 prox light: 200
 prox black: 900
 */
-body {
-  background-color: #111;
-  color: white;
-  font-family: "proxima-nova";
-  font-size: 10px;
-}
 
-/* styling for highlight */
-::selection {
-  background-color: #EAFFD0;
-  color: white;
-  opacity: 1;
-}
+  body {
+    background-color: #111;
+    color: white;
+    font-family: "proxima-nova";
+    font-size: 10px;
+  }
+  /* styling for highlight */
 
-h1 {
-  font-weight: 700;
-  font-size: 60px;
-  letter-spacing: 2px;
-  margin-left: 100px;
-  padding: 20px 0px 50px 0px;
-}
+  ::selection {
+    background-color: #EAFFD0;
+    color: white;
+    opacity: 1;
+  }
 
-h2 {
-  font-weight: 500;
-  font-size: 23.5px;
-  letter-spacing: 1px;
-}
+  h1 {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-left: 100px;
+    padding: 20px 0px 50px 0px;
+  }
 
-/* text styles */
+  h2 {
+    font-weight: 500;
+    font-size: 23.5px;
+    letter-spacing: 1px;
+  }
+  /* text styles */
 
-#bold-text {
-  font-weight: 500;
-}
+  #bold-text {
+    font-weight: 500;
+    cursor: pointer;
+  }
 
-#green-text {
-  color: #45925f;
-}
+  #green-text {
+    color: #45925f;
+    cursor: pointer;
+  }
 
-#underlined-text {
-  text-decoration: underline;
-}
+  #underlined-text {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
-#left-side-container {
-  float: left;
-  border: 1px solid #111;
-  width: 49vw;
-  height: 100vh;
-}
+  #left-side-container {
+    float: left;
+    border: 1px solid #111;
+    width: 49vw;
+    height: 100vh;
+  }
 
-#right-side-container {
-  float:right;
-  border: 1px solid #222;
-  width: 49vw;
-  height:100vh;
-}
+  #right-side-container {
+    float: right;
+    border: 1px solid #222;
+    width: 49vw;
+    height: 100vh;
+  }
 
-ol {
-  counter-reset: my-counter;
+  ol {
+    counter-reset: my-counter;
+  }
 
-}
+  ol > li {
+    /*border: 1px solid purple;*/
+    color: white;
+    list-style: none;
+    margin-left: 60px;
+    font-size: 16px;
+    margin-right: 70px;
+    font-weight: 200;
+    height: 60px;
+  }
 
-ol > li {
-  /*border: 1px solid purple;*/
-  color: white;
-  list-style: none;
-  margin-left: 60px;
-  font-size: 16px;
-  margin-right: 70px;
-  font-weight: 200;
-  height: 60px;
-}
+  ol > li:before {
+    /*border: 1px solid steelblue;*/
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    color: #45925f;
+    font-family: "proxima-nova";
+    font-weight: 900;
+    font-size: 40px;
+    margin-left: -42px;
+    padding-right: 20px;
+    width: 40px;
+    padding-top: 20px;
+  }
 
-ol > li:before {
-  /*border: 1px solid steelblue;*/
-  content: counter(my-counter);
-	counter-increment: my-counter;
-  color: #45925f;
-  font-family: "proxima-nova";
-  font-weight: 900;
-  font-size: 40px;
-  margin-left: -42px;
-  padding-right: 20px;
-  width: 40px;
-  padding-top: 20px;
-}
+  p {
+    font-weight: 200px;
+    margin-left: 100px;
+    margin-top: 80px;
+    font-size: 16px;
+  }
+  /** * * * * * * * * * * * * * * RIGHT SIDE * * * * * * * * * * * * * * */
 
-p {
-  font-weight: 200px;
-  margin-left: 100px;
-  margin-top: 80px;
-  font-size: 16px;
-}
+  ul {
+    margin-left: 100px;
+    margin-top: 30vh;
+  }
 
-ul {
-  margin-left: 100px;
-  margin-top: 30vh;
-}
+  ul > li {
+    list-style: none;
+    font-size: 40px;
+    font-weight: 900;
+    border: 1px solid #111;
+    height: 70px;
+    letter-spacing: 1px;
+  }
 
-ul > li {
-list-style: none;
-font-size: 40px;
-font-weight: 900;
-border: 1px solid #111;
-height: 70px;
-}
+  ul > li:hover {
+    transition: color 0.3s ease;
+    color: #45925f;
+    cursor: pointer;
+  }
 
-ul > li > img {
-  float: right;
-  margin-right: 50px;
-}
+  ul > li > img {
+    float: right;
+    margin-right: 50px;
+  }
 
-#close-menu {
-  float: right;
-  font-size: 36px;
-  font-weight: 100;
-  margin-right: 60px;
-}
-
-/** * * * * * * * * * * * * * * RIGHT SIDE * * * * * * * * * * * * * * */
-
+  #close-menu {
+    float: right;
+    font-size: 36px;
+    font-weight: 100;
+    margin-right: 60px;
+  }
 </style>
+
 <body>
   <div id="green-top-bar"></div>
   <!--- - - - - - - -  - - - LEFT SIDE - - - - - - - - - - - - -->
   <div id="left-side-container">
-  <h1> how to <span id="green-text">meditate</span> </h1>
-  <ol>
-    <li>Sitting <span id="underlined-text">half-lotus</span> is recommended but any comfortable position will do. </li>
-    <li>close your eyes </li>
-    <li>take 3 deep breaths </li>
-    <li>breathe in, thinking of the word “ in” as you breathe in. Then, think “out” as you breathe out. </li>
-    <li>continue breathing while labeling your breathes “in”, “out”, “in”, “out”. </li>
-  </ol>
-<p>via <span id="bold-text"> Thich Nhat Hanh </span> &amp; the Vipassana Dhura Society. </p>
-</div>
-<div id="vertical-separator"></div>
-<!--- - - - - - - -  - - - RIGHT SIDE - - - - - - - - - - - -->
-<div id="right-side-container">
-  <p id="close-menu"> X </p>
-<ul>
-  <!-- HOME -->
-  <!-- <p> ? </p> -->
-  <li> home
-  <img src="http://placehold.it/48x48">
-</li>
-  <!-- MEDITATE -->
-  <li> meditate
-  <img src="http://placehold.it/48x48">
-  </li>
-  <!-- DISCOVER -->
-  <li> discover
-  <img src="http://placehold.it/48x48">
-  </li>
+    <h1> how to
+      <span id="green-text">meditate</span>
+    </h1>
+    <ol>
+      <li>Sitting
+        <span id="underlined-text">half-lotus</span> is recommended but any comfortable position will do. </li>
+      <li>close your eyes </li>
+      <li>take 3 deep breaths </li>
+      <li>breathe in, thinking of the word “ in” as you breathe in. Then, think “out” as you breathe out. </li>
+      <li>continue breathing while labeling your breathes “in”, “out”, “in”, “out”. </li>
+    </ol>
+    <p>via
+      <span id="bold-text"> Thich Nhat Hanh </span> &amp; the Vipassana Dhura Society. </p>
+  </div>
+  <div id="vertical-separator"></div>
+  <!--- - - - - - - -  - - - RIGHT SIDE - - - - - - - - - - - -->
+  <div id="right-side-container">
+    <p id="close-menu"> X </p>
+    <ul>
+      <!-- HOME -->
+      <!-- <p> ? </p> -->
+      <li> home
+        <img src="http://placehold.it/48x48">
+      </li>
+      <!-- MEDITATE -->
+      <li> meditate
+        <img src="http://placehold.it/48x48">
+      </li>
+      <!-- DISCOVER -->
+      <li> discover
+        <img src="http://placehold.it/48x48">
+      </li>
       <!-- BLOG -->
       <li> blog
-      <img src="http://placehold.it/48x48">
+        <img src="http://placehold.it/48x48">
       </li>
 
       <!-- CONTACT -->
       <li> contact
-      <img src="http://placehold.it/48x48">
+        <img src="http://placehold.it/48x48">
       </li>
-</ul>
+    </ul>
 
 
-</div>
+  </div>
 </body>
