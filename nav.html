@@ -67,7 +67,7 @@ h2 {
 
 #right-side-container {
   float:right;
-  border: 1px solid blue;
+  border: 1px solid #222;
   width: 49vw;
   height:100vh;
 }
@@ -110,13 +110,28 @@ p {
 }
 
 ul {
-  margin-left: 120px;
+  margin-left: 100px;
+  margin-top: 30vh;
 }
 
 ul > li {
 list-style: none;
 font-size: 40px;
 font-weight: 900;
+border: 1px solid #111;
+height: 70px;
+}
+
+ul > li > img {
+  float: right;
+  margin-right: 50px;
+}
+
+#close-menu {
+  float: right;
+  font-size: 36px;
+  font-weight: 100;
+  margin-right: 60px;
 }
 
 /** * * * * * * * * * * * * * * RIGHT SIDE * * * * * * * * * * * * * * */
@@ -139,10 +154,10 @@ font-weight: 900;
 <div id="vertical-separator"></div>
 <!--- - - - - - - -  - - - RIGHT SIDE - - - - - - - - - - - -->
 <div id="right-side-container">
-  <p> X </p>
+  <p id="close-menu"> X </p>
 <ul>
   <!-- HOME -->
-  <p> ? </p>
+  <!-- <p> ? </p> -->
   <li> home
   <img src="http://placehold.it/48x48">
 </li>
