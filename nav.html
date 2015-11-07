@@ -30,14 +30,29 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 68px;
+  font-size: 50px;
   letter-spacing: 2px;
+  margin-left: 120px;
 }
 
 h2 {
   font-weight: 500;
   font-size: 23.5px;
   letter-spacing: 1px;
+}
+
+/* text styles */
+
+#bold-text {
+  font-weight: 500;
+}
+
+#green-text {
+  color: #45925f;
+}
+
+#underlined-text {
+  text-decoration: underline;
 }
 
 #left-side-container {
@@ -54,20 +69,50 @@ h2 {
   height:100vh;
 }
 
+ol {
+  counter-reset: my-counter;
+
+}
+
+ol > li {
+  /*border: 1px solid purple;*/
+  color: yellow;
+  list-style: none;
+  margin-left: 60px;
+  font-size: 16px;
+}
+
+ol > li:before {
+  content: counter(my-counter);
+	counter-increment: my-counter;
+  color: green;
+  font-family: "proxima-nova";
+  font-weight: 900;
+  font-size: 40px;
+  margin-left: -20px;
+  padding-right: 20px;
+}
+
+p {
+  margin-left: 120px;
+  font-size: 16px;
+}
+
+
 </style>
 <body>
   <div id="green-top-bar"></div>
   <!--- - - - - - - -  - - - LEFT SIDE - - - - - - - - - - - - -->
   <div id="left-side-container">
-  <h1> how to meditate </h1>
+  <h1> how to <span id="green-text">meditate</span> </h1>
   <ol>
-    <li>Sitting half-lotus is recommended but any comfortable position will do. </li>
+    <li>Sitting <span id="underlined-text">half-lotus</span> is recommended but any comfortable position will do. </li>
     <li> close your eyes </li>
     <li> take 3 deep breaths </li>
     <li> breathe in, thinking of the word “ in” as you breathe in. Then, think “out” as you breathe out. </li>
     <li> continue breathing while labeling your breathes “in”, “out”, “in”, “out”. </li>
   </ol>
-<p> via <span> Thich Nhat Hanh </span> &amp; the <span> Vipassana Dhura Society.</span> </p>
+<p> via <span id="bold-text"> Thich Nhat Hanh </span> &amp; the <span> Vipassana Dhura Society.</span> </p>
 </div>
 <div id="vertical-separator"></div>
 <!--- - - - - - - -  - - - RIGHT SIDE - - - - - - - - - - - -->
